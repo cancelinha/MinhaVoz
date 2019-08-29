@@ -1,0 +1,187 @@
+{
+	"id": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+	"name": "MinhaVoz",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Chamados",
+			"description": "",
+			"collectionId": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+			"order": [
+				"5ee44cf6-8004-0821-5eb3-fabec1623977",
+				"1e8a6596-0951-8bc8-26f9-491fb2ca7006",
+				"de5f262b-60a1-8013-1fe4-8caedd8c852c",
+				"6b6b1d73-0b4c-c714-f202-0fc28e2f6398"
+			],
+			"owner": "6664834",
+			"folders_order": [],
+			"id": "ec4718b4-f115-eccb-fc2e-b2512bd125b1"
+		},
+		{
+			"name": "Usuario",
+			"description": "",
+			"collectionId": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+			"order": [
+				"13599e8e-0e5e-12d0-18ff-5dc674d9afbe"
+			],
+			"owner": "6664834",
+			"folders_order": [],
+			"id": "6bb11550-3622-e525-cb4c-bd186e77ab20"
+		}
+	],
+	"folders_order": [
+		"6bb11550-3622-e525-cb4c-bd186e77ab20",
+		"ec4718b4-f115-eccb-fc2e-b2512bd125b1"
+	],
+	"timestamp": 1565097184820,
+	"owner": "6664834",
+	"public": false,
+	"requests": [
+		{
+			"id": "13599e8e-0e5e-12d0-18ff-5dc674d9afbe",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/Login",
+			"folder": "6bb11550-3622-e525-cb4c-bd186e77ab20",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565100502874,
+			"name": "Login",
+			"description": "",
+			"collectionId": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+			"responses": [],
+			"rawModeData": "{\n\"email\": \"admin@admin.com\"\t,\n\"senha\": \"12345\"\n }"
+		},
+		{
+			"id": "1e8a6596-0951-8bc8-26f9-491fb2ca7006",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/api/Chamados/4",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+			"data": null,
+			"dataMode": "params",
+			"name": "BuscarPorId",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1565185841874,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "ec4718b4-f115-eccb-fc2e-b2512bd125b1"
+		},
+		{
+			"id": "5ee44cf6-8004-0821-5eb3-fabec1623977",
+			"headers": "",
+			"headerData": [],
+			"url": "http://192.168.4.32:5001/listar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1565101934521,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "ec4718b4-f115-eccb-fc2e-b2512bd125b1"
+		},
+		{
+			"id": "6b6b1d73-0b4c-c714-f202-0fc28e2f6398",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZmZAYWRtaW4uY29tIiwianRpIjoiMSIsIkFkbWluaXN0cmFkb3IiOiJqZWZmQGFkbWluLmNvbSIsImV4cCI6MTU2NTI2NzI1MywiaXNzIjoiTWluaGFWb3ouV2ViQXBpIiwiYXVkIjoiTWluaGFWb3ouV2ViQXBpIn0.jxvZ0C5MKdwYshyPjsqYQ-djulIBzEExsup53IeS1sU\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZmZAYWRtaW4uY29tIiwianRpIjoiMSIsIkFkbWluaXN0cmFkb3IiOiJqZWZmQGFkbWluLmNvbSIsImV4cCI6MTU2NTI2NzI1MywiaXNzIjoiTWluaGFWb3ouV2ViQXBpIiwiYXVkIjoiTWluaGFWb3ouV2ViQXBpIn0.jxvZ0C5MKdwYshyPjsqYQ-djulIBzEExsup53IeS1sU",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5001/cadastrar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565354871747,
+			"name": "Cadastrar",
+			"description": "",
+			"collectionId": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+			"responses": [],
+			"rawModeData": "{\n\n        \"nome\": \"Usuario25\",\n        \"email\": \"25\",\n        \"telefone\": \"+55(11)987248332\",\n        \"titulo\": \"25\",\n        \"assunto\": \"25\",\n        \"descricao\": \"25\",\n        \"status\": \"pendente\",\n        \"data\": \"2019-05-08T00:00:00\"\n}"
+		},
+		{
+			"id": "de5f262b-60a1-8013-1fe4-8caedd8c852c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/Chamados/editarstatus/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "745b8f69-621f-c2d4-9f3e-0bf2eba964cb",
+			"data": [],
+			"dataMode": "raw",
+			"name": "EditarStatus",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1565186112042,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "ec4718b4-f115-eccb-fc2e-b2512bd125b1",
+			"rawModeData": "{\n\t\"status\":\"Atendido\"\n}"
+		}
+	]
+}
