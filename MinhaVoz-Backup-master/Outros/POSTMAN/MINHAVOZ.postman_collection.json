@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "f7ffc11e-9f66-4d87-92e6-6c8dd530a553",
+		"name": "MINHAVOZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CADASTRAR",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZmZAYWRtaW4uY29tIiwianRpIjoiMSIsImV4cCI6MTU2NTMxOTUzMSwiaXNzIjoiTWluaGFWb3ouV2ViQXBpIiwiYXVkIjoiTWluaGFWb3ouV2ViQXBpIn0.8c15Nhgi6BQyH-nv3Npgqmul_aPvkOar6lKE9pPuTWc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\t\t\t\"nome\" : \"teste3\",\n\t\t\t\t\t\"email\" : \"teste3@gmail.com\",\n\t\t\t\t\t\"telefone\" : \"+55(11)989129103\",\n\t\t\t\t\t\"titulo\" : \"Chá doce no refeitório\",\n\t\t\t\t\t\"assunto\" : \"Refeitório\",\n\t\t\t\t\t\"descricao\" : \"O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.\",\n\t\t\t\t\t\"status\" : \"Atendido\",\n\t\t\t\t\t\"data\" : \"01/03/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/cadastrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZmZAYWRtaW4uY29tIiwianRpIjoiMSIsImV4cCI6MTU2NTMxOTUzMSwiaXNzIjoiTWluaGFWb3ouV2ViQXBpIiwiYXVkIjoiTWluaGFWb3ouV2ViQXBpIn0.8c15Nhgi6BQyH-nv3Npgqmul_aPvkOar6lKE9pPuTWc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\t\t\t\"nome\" : \"teste3\",\n\t\t\t\t\t\"email\" : \"teste3@gmail.com\",\n\t\t\t\t\t\"telefone\" : \"+55(11)989129103\",\n\t\t\t\t\t\"titulo\" : \"Chá doce no refeitório\",\n\t\t\t\t\t\"assunto\" : \"Refeitório\",\n\t\t\t\t\t\"descricao\" : \"O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.O chá está muito acocicado.\",\n\t\t\t\t\t\"status\" : \"Atendido\",\n\t\t\t\t\t\"data\" : \"01/03/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jeff@admin.com\",\n\t\"senha\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDITAR (NOT WORKING)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZmZAYWRtaW4uY29tIiwianRpIjoiMSIsImV4cCI6MTU2NTMxOTUzMSwiaXNzIjoiTWluaGFWb3ouV2ViQXBpIiwiYXVkIjoiTWluaGFWb3ouV2ViQXBpIn0.8c15Nhgi6BQyH-nv3Npgqmul_aPvkOar6lKE9pPuTWc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\t\t\t\"status\" : \"Atendido\",\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/editarstatus/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"editarstatus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
